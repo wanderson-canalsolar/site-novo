@@ -10,11 +10,11 @@
 </head>
 <body>
     <header>
-            <div style="background-color: #586589; height: 25px;" class="row justify-content-center align-items-center">
-              <div class="col-auto" style="color: #fff;">
-                26 de Janeiro de 2023
-              </div>  
-            </div>
+      <div class="container-fluid text-md-center" style="background-color: #586589; height: 25px;">
+        <div class="col-md text-white">
+          <p id="dataAtual"></p>
+        </div>  
+      </div>
             <div class="container">
               <div class="row d-flex mt-2 align-items-center justify-content-center">
                 <div class="col-md-1 ">
@@ -62,238 +62,679 @@
             </div>
     </header>
     <nav class="mt-3">
-      <div class="d-flex justify-content-center py-3">
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Home</font></font></a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Notícias</font></font></a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Artigos</font></font></a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Blog</font></font></a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Empresas Parceiras</font></font></a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Instaladores</font></font></a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Revista</font></font></a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eventos</font></font></a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vídeos</font></font></a></li>
-          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cursos</font></font></a></li>
-        </ul>
-      </div>
-    </nav>
+  <div class="d-flex justify-content-center py-3">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Notícias</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Artigos</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Empresas Parceiras</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Instaladores</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Revista</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Eventos</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Vídeos</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link active" aria-current="page">Cursos</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
     <main>
     <div class="container">
-        <div class="row mt-3">
-          <div class="col-md-8 d-flex emphasis ">
-            <div class="card border-0">
-              <img src="img/imgdestaque.png" class="card-img" alt="...">
-              <div class="card-img-overlay text-md-center d-flex align-self-end">
-                <!-- <h5 class="card-title">Card title</h5> -->
-                <h4 class="card-text emphasis">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with.</h4>
-              </div>
+      <div class="row mt-3 destaque">
+        <div class="col-md-8 d-flex emphasis">
+          <a href="#">
+          <div class="card border-0">
+            <img src="img/imgdestaque.png" class="card-img" alt="Featured Image">
+            <div class="card-img-overlay text-md-start d-flex align-self-end">
+              <h4 class="card-text emphasis">
+              <a href="#">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with.</a>
+              </h4>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="row g-2 mt-1">
-              <div class="col-md-6">
-                <img src="img/imgnews.png" class="img-fluid rounded-2" alt="...">
-              </div>
-              <div class="col-md-6">
-                <div class="card-body">
-                  <p class="card-text"><span>Lorem</span> It was popularised in the 1960s with the release of.</p>
-                </div>
-              </div>
-            </div>
-            <div class="row g-2 mt-4">
-              <div class="col-md-6">
-                <img src="img/imgnews.png" class="img-fluid rounded-2" alt="...">
-              </div>
-              <div class="col-md-6">
-                <div class="card-body">
-                  <p class="card-text"><span>Lorem</span> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
-                </div>
-              </div>
-            </div>
-            <div class="row g-2 mt-4">
-              <div class="col-md-6">
-                <img src="img/imgnews.png" class="img-fluid rounded-2" alt="...">
-              </div>
-              <div class="col-md-6">
-                <div class="card-body">
-                  <p class="card-text"><span>Lorem</span> Letraset sheets containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          </a>
         </div>
-          <div class="row mt-4">
+        <div class="col-md-4">
+          
+          <div class="row mt-0 destaque-1">
+            <div class="col-md-6 g-2">
+              <a href="#">
+              <img src="img/imgnews.png" class="img-fluid rounded-2" alt="News Image"></a>
+            </div>
+            <div class="col-md-6">
+              <a href="#"><div class="card-body">
+                <p class="card-text">
+                  <span>Lorem</span>
+                  It was popularised in the 1960s with the release of. It was popularised in the 1960s with the release.
+                </p>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="row mt-2 destaque-2">
+            <div class="col-md-6 g-2">
+              <a href="#">
+              <img src="img/imgnews.png" class="img-fluid rounded-2" alt="News Image"></a>
+            </div>
+            <div class="col-md-6">
+              <a href="#"><div class="card-body">
+                <p class="card-text">
+                  <span>Lorem</span>
+                  It was popularised in the 1960s with the release of. It was popularised in the 1960s with the release of.
+                </p>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="row mt-2 destaque-3">
+            <div class="col-md-6 g-2">
+              <a href="#">
+              <img src="img/imgnews.png" class="img-fluid rounded-2" alt="News Image"></a>
+            </div>
+            <div class="col-md-6">
+              <a href="#"><div class="card-body">
+                <p class="card-text">
+                  <span>Lorem</span>
+                  It was popularised in the 1960s with the release of.
+                </p>
+              </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+          <div class="row mt-4 outras-noticias-sem-img">
             <div class="col-md-3 border-end border-dark">
-              <p class="card-text"><span>LOREM</span> Letraset sheets containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p>
+              <a href="#"><p class="card-text"><span>LOREM</span> Letraset sheets containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
             </div>
             <div class="col-md-3 border-end border-dark">
-              <p class="card-text"><span>LOREM</span> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+              <a href="#"><p class="card-text"><span>LOREM</span> Letraset sheets containing Lorem Ipsum passages.</p></a>
             </div>
             <div class="col-md-3 border-end border-dark">
-              <p class="card-text"><span>LOREM</span> This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <a href="#"><p class="card-text"><span>LOREM</span> Letraset sheets containing Lorem Ipsum passages, and more recently of Lorem Ipsum. Letraset sheets containing Lorem Ipsum passages</p></a>
             </div>
             <div class="col-md-3">
-              <p class="card-text"><span>LOREM</span> This content is a little bit longer.</p>
+              <a href="#"><p class="card-text"><span>LOREM</span> Letraset sheets containing Lorem Ipsum passages, and more recently of Lorem Ipsum,and more recently of Lorem Ipsum.</p></a>
             </div>
           </div>
-          <div class="row banners1 mt-4">
-            <div class="col-md-4">
-              <img src="img/banners.png" class="img-fluid" alt="banner">
+
+          <div class="row mt-4 banners">
+            <div class="col-md-4 d-flex justify-content-center">
+              <a href="#"><img src="img/banners.png" class="img-fluid" alt="Banner"></a>
             </div>
-            <div class="col-md-4">
-              <img src="img/banners.png" class="img-fluid" alt="banner">
+            <div class="col-md-4 d-flex justify-content-center">
+              <a href="#"><img src="img/banners.png" class="img-fluid" alt="Banner"></a>
             </div>
-            <div class="col-md-4">
-              <img src="img/banners.png" class="img-fluid" alt="banner">
-            </div>
-          </div> 
-    
-          <div class="row divider mt-4 align-items-center">
-            <div class="col-md-1 bg-black" style="height: 1px;">
-              <hr class="hr" />
-            </div>
-            <div class="col-md-1">
-              <h6>DESTAQUES</h6>
-            </div>
-            <div class="col-md-10 bg-black" style="height: 1px;">
-              <hr class="hr" />
+            <div class="col-md-4 d-flex justify-content-center">
+              <a href="#"><img src="img/banners.png" class="img-fluid" alt="Banner"></a>
             </div>
           </div>
 
           <div class="row mt-4">
+            <div class="col-md-12 d-flex align-items-center">
+              <h6 class="text-center px-3">DESTAQUES</h6>
+              <div class="w-100 bg-black border-bottom mx-3"></div>
+            </div>
+          </div>
+
+          <div class="row mt-4">  
             <div class="col">
               <h5 class="subtitle">NOTÍCIAS</h5>
-                <div class="row g-2 mt-1">
-                  <div class="col-md-6">
-                    <img src="img/outrasnoticias.png" class="img-fluid rounded-2" alt="...">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card-body">
-                      <p class="card-text"><span>Lorem</span> It was popularised in the 1960s with the release of.</p>
-                    </div>
+
+              <div class="row g-2 mt-1 outras-noticias-destaque">
+                <div class="col-md-6">
+                  <a href="#"><img src="img/outrasnoticias.png" class="img-fluid rounded" alt="Notícia"></a>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <a href="#"><p class="card-text">
+                      <span class="font-weight-bold">Lorem</span> It was popularised in the 1960s with the release of.
+                    </p></a>
                   </div>
                 </div>
-                <div class="row g-2 mt-4">
-                  <div class="col-md-6">
-                    <img src="img/outrasnoticias.png" class="img-fluid rounded-2" alt="...">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card-body">
-                      <p class="card-text"><span>Lorem</span> With the release of Letraset sheets containing Lorem Ipsum passages.</p>
-                    </div>
+              </div>
+
+              <div class="row g-2 mt-4 outras-noticias-destaque">
+                <div class="col-md-6">
+                  <a href="#"><img src="img/outrasnoticias.png" class="img-fluid rounded" alt="Notícia"></a>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <a href="#"><p class="card-text">
+                      <span class="font-weight-bold">Lorem</span> It was popularised in the 1960s with the release of.
+                    </p></a>
                   </div>
                 </div>
-                <div class="row g-2 mt-4">
-                  <div class="col-md-6">
-                    <img src="img/outrasnoticias.png" class="img-fluid rounded-2" alt="...">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card-body">
-                      <p class="card-text"><span>Lorem</span> Letraset sheets containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p>
-                    </div>
+              </div>
+
+              <div class="row g-2 mt-4 outras-noticias-destaque">
+                <div class="col-md-6">
+                  <a href="#"><img src="img/outrasnoticias.png" class="img-fluid rounded" alt="Notícia"></a>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <a href="#"><p class="card-text">
+                      <span class="font-weight-bold">Lorem</span> It was popularised in the 1960s with the release of. It was popularised.
+                    </p></a>
                   </div>
                 </div>
-            </div>
+              </div>
+
+            </div>  
+
             <div class="col">
               <h5 class="subtitle">ARTIGOS</h5>
+
+              <div class="row g-2 mt-1 outros-artigos-destaque">
+                <div class="col-md-6">
+                  <a href="#"><img src="img/outrasnoticias.png" class="img-fluid rounded" alt="Artigo"></a>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <a href="#"><p class="card-text">
+                      <span class="font-weight-bold">Lorem</span> It was popularised in the 1960s with the release of. It was popularised.
+                    </p></a>                  
+                  </div>
+                </div>
+              </div>
+            
+              <div class="row g-2 mt-4 outros-artigos-destaque">
+                <div class="col-md-6">
+                  <a href="#"><img src="img/outrasnoticias.png" class="img-fluid rounded" alt="Artigo"></a>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <a href="#"><p class="card-text">
+                      <span class="font-weight-bold">Lorem</span> It was popularised in the 1960s with the release of. It was popularised.
+                    </p></a>                  
+                  </div>
+                </div>
+              </div>
+            
+              <div class="row g-2 mt-4 outros-artigos-destaque">
+                <div class="col-md-6">
+                  <a href="#"><img src="img/outrasnoticias.png" class="img-fluid rounded" alt="Artigo"></a>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <a href="#"><p class="card-text">
+                      <span class="font-weight-bold">Lorem</span> It was popularised in containing Lorem Ipsum release of. It was popularised.
+                    </p></a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="vr bg-black align-self-center" style="height: 150px; margin-left: 50px;"></div>
+            
+            <div class="col-md-4 align-content-center">
+              espaço em branco, mas nem tão branco assim
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-12 d-flex align-items-center">
+              <h6 class="text-center px-3">NOTÍCIAS</h6>
+              <div class="w-100 bg-black border-bottom mx-3"></div>
+            </div>
+          </div>
+
+          <div class="row mt-4 ">
+            <div class="col-md">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card border-0">
+                    <a href="#"><img src="img/noticiasmais.png" class="card-img-top rounde-2" alt="Imagem de Capa"></a>
+                    <div class="card-body">
+                      <a href="#"><p class="card-text">
+                        <span class="font-weight-bold">Lorem</span> It was popularised in containing Lorem Ipsum release of. It was popularised.
+                      </p></a> 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card border-0">
+                    <a href="#"><img src="img/noticiasmais.png" class="card-img-top rounde-2" alt="Imagem de Capa"></a>
+                    <div class="card-body">
+                      <a href="#"><p class="card-text">
+                        <span class="font-weight-bold">Lorem</span> It was popularised in containing Lorem Ipsum release of. Containing Lorem Ipsum release of. It was popularised.
+                      </p></a>                    
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card border-0">
+                    <a href="#"><img src="img/noticiasmais.png" class="card-img-top rounde-2" alt="Imagem de Capa"></a>
+                    <div class="card-body">
+                      <a href="#"><p class="card-text">
+                        <span class="font-weight-bold">Lorem</span> Containing Lorem Ipsum release of. It was popularised in containing Lorem Ipsum release of. It was popularised.
+                      </p></a>                    
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card border-0">
+                    <a href="#"><img src="img/noticiasmais.png" class="card-img-top rounde-2" alt="Imagem de Capa"></a>
+                    <div class="card-body">
+                      <a href="#"><p class="card-text">
+                        <span class="font-weight-bold">Lorem</span> It was popularised in containing Lorem Ipsum release of. It was popularised.
+                      </p></a>                    
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card border-0">
+                    <a href="#"><img src="img/noticiasmais.png" class="card-img-top rounde-2" alt="Imagem de Capa"></a>
+                    <div class="card-body">
+                      <a href="#"><p class="card-text">
+                        <span class="font-weight-bold">Lorem</span> It was popularised in containing Lorem Ipsum containing Lorem Ipsum release of release of. It was popularised.
+                      </p></a>                    
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card border-0">
+                    <a href="#"><img src="img/noticiasmais.png" class="card-img-top rounde-2" alt="Imagem de Capa"></a>
+                    <div class="card-body">
+                      <a href="#"><p class="card-text">
+                        <span class="font-weight-bold">Lorem</span> It was popularised in containing Lorem Ipsum release of. It was popularised.
+                      </p></a>                    
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md">
+                  <div class="col-md-12 d-flex align-items-center">
+                    <h6 class="text-center px-3">BRASIL</h6>
+                    <div class="w-100 bg-black border-bottom mx-3"></div>
+                  </div>
+                  <a href="#"><p class="card-text mt-2"><span style="color: #FE9519;">Lorem</span> Ipsum passages, and more recently containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
+                  <a href="#"><p class="card-text mt-2"><span style="color: #FE9519;">Lorem</span> Ipsum passages, and more recently containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
+                </div>
+              </div>
+
+              <div class="row mt-4">
+                <div class="col-md">
+                  <div class="col-md-12 d-flex align-items-center">
+                    <h6 class="text-center px-3">TECNOLOGIA</h6>
+                    <div class="w-100 bg-black border-bottom mx-3"></div>
+                  </div>
+                  <a href="#"><p class="card-text mt-2"><span style="color: #FE9519;">Lorem</span> Ipsum passages, and more recently containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
+                  <a href="#"><p class="card-text mt-2"><span style="color: #FE9519;">Lorem</span> Ipsum passages, and more recently containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
+                </div>
+              </div>
+
+              <div class="row mt-4">
+                <div class="col-md">
+                  <div class="col-md-12 d-flex align-items-center">
+                    <h6 class="text-center px-3">MUNDO</h6>
+                    <div class="w-100 bg-black border-bottom mx-3"></div>
+                  </div>
+                  <a href="#"><p class="card-text mt-2"><span style="color: #FE9519;">Lorem</span> Ipsum passages, and more recently containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
+                  <a href="#"><p class="card-text mt-2"><span style="color: #FE9519;">Lorem</span> Ipsum passages, and more recently containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
+                </div>
+              </div>
+          </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-12 d-flex align-items-center">
+              <h6 class="text-center px-3">ARTIGOS</h6>
+              <div class="w-100 bg-black border-bottom mx-3"></div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class=" col d-flex emphasis">
+              <div class="card border-0">
+                <img src="img/imgdestaque.png" class="card-img" alt="Featured Image">
+                <div class="card-img-overlay text-md-start d-flex align-self-end">
+                 <h5 class="card-text emphasis"><a href="#">Ipsum passages, and more recently with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with.</a></h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card border-0">
+                <a href="#"><img src="img/imgdestaque.png" class="card-img" alt="Featured Image"></a>
+                <div class="card-body">
+                  <a href="#"><p class="card-text"><span style="color: #18125E;">Lorem</span> Letraset sheets containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card border-0">
+                <a href="#"><img src="img/imgdestaque.png" class="card-img" alt="Featured Image"></a>
+                <div class="card-body">
+                  <a href="#"><p class="card-text"><span style="color: #18125E;">Lorem</span> Letraset sheets containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-3">
+              <div class="card border-0">
+                <a href="#"><img src="img/imgdestaque.png" class="card-img" alt="Featured Image"></a>
+                <div class="card-body">
+                  <a href="#"><p class="card-text"><span style="color: #18125E;">Lorem</span> Letraset sheets containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card border-0">
+                <a href="#"><img src="img/imgdestaque.png" class="card-img" alt="Featured Image"></a>
+                <div class="card-body">
+                  <a href="#"><p class="card-text"><span style="color: #18125E;">Lorem</span> Letraset sheets containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card border-0">
+                <a href="#"><img src="img/imgdestaque.png" class="card-img" alt="Featured Image"></a>
+                <div class="card-body">
+                  <a href="#"><p class="card-text"><span style="color: #18125E;">Lorem</span> Letraset sheets containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card border-0">
+                <a href="#"><img src="img/imgdestaque.png" class="card-img" alt="Featured Image"></a>
+                <div class="card-body">
+                  <a href="#"><p class="card-text"><span style="color: #18125E;">Lorem</span> Letraset sheets containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <div class="col-md-12 d-flex align-items-center">
+                <div class="w-100 bg-black border-bottom mx-3"></div>
+                <h6 class="text-center px-3">BLOG</h6>
+                <div class="w-100 bg-black border-bottom mx-3"></div>
+              </div>
+
+              <div class=" col d-flex emphasis mt-4">
+                <div class="card border-0">
+                  <img src="img/imgdestaque.png" class="card-img" alt="blog">
+                  <div class="card-img-overlay text-md-start d-flex align-self-end">
+                    <h6 class="card-text emphasis"><a href="#">Recently with.</a></h6>
+                  </div>
+                </div>
+              </div>
+
               <div class="row g-2 mt-1">
                 <div class="col-md-6">
-                  <img src="img/outrasnoticias.png" class="img-fluid rounded-2" alt="...">
+                  <a href="#"><img src="img/outrasnoticias.png" class="img-fluid rounded-2" alt="blog"></a>
                 </div>
                 <div class="col-md-6">
                   <div class="card-body">
-                    <p class="card-text"><span>Lorem</span> It was popularised in the 1960s with the release of.</p>
+                    <a href="#"><p class="card-text"><span style="color: #18125E;">Lorem</span> Letraset sheets containing and more recently of Lorem Ipsum.</p></a>
                   </div>
                 </div>
               </div>
-              <div class="row g-2 mt-4">
+
+              <div class="row g-2 mt-1">
                 <div class="col-md-6">
-                  <img src="img/outrasnoticias.png" class="img-fluid rounded-2" alt="...">
+                  <a href="#"><img src="img/outrasnoticias.png" class="img-fluid rounded-2" alt="blog"></a>
                 </div>
                 <div class="col-md-6">
                   <div class="card-body">
-                    <p class="card-text"><span>Lorem</span> With the release of Letraset sheets containing Lorem Ipsum passages.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row g-2 mt-4">
-                <div class="col-md-6">
-                  <img src="img/outrasnoticias.png" class="img-fluid rounded-2" alt="...">
-                </div>
-                <div class="col-md-6">
-                  <div class="card-body">
-                    <p class="card-text"><span>Lorem</span> Letraset sheets containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p>
+                    <a href="#"><p class="card-text"><span style="color: #18125E;">Lorem</span> Letraset sheets containing Lorem Ipsum passages, of Lorem Ipsum.</p></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="vr bg-black align-self-center" style="height: 150px; margin-left: 50px;"></div>
-            <div class="col-md-4 align-content-center">
-              <div class="row">
-                <div class="col text-center">
-                  <img src="img/outrasnoticias.png" class="img-fluid rounded-2" alt="" width="300px">
-                </div>
+            <div class="col-md-4">
+              <div class="col-md-12 d-flex align-items-center">
+                <div class="w-100 bg-black border-bottom mx-3"></div>
+                <h6 class="text-center px-3">EVENTOS</h6>
+                <div class="w-100 bg-black border-bottom mx-3"></div>
               </div>
-              <h5 class="subtitle text-center mt-5">COLUNISTAS</h5>
-              <div class="row mt-5">
-                <div class="col">
-                  <div class="" style="width: 5rem;">
-                    <img class="card-img-top rounded-circle" src="img/colunista.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">fdfddddgfgfg</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="" style="width: 5rem;">
-                    <img class="card-img-top rounded-circle" src="img/colunista.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">fdfddddgfgfg</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="" style="width: 5rem;">
-                    <img class="card-img-top rounded-circle" src="img/colunista.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">fdfddddgfgfg</p>
-                    </div>
+
+              <div class=" col d-flex emphasis mt-4">
+                <div class="card border-0">
+                  <img src="img/imgdestaque.png" class="card-img" alt="Featured Image">
+                  <div class="card-img-overlay text-md-start d-flex align-self-end">
+                    <h6 class="card-text emphasis"><a href="#">Lorem Ipsum passages, and more recently with.</a></h6>
                   </div>
                 </div>
               </div>
-              <div class="row mt-5">
-                <div class="col">
-                  <div class="" style="width: 5rem;">
-                    <img class="card-img-top rounded-circle" src="img/colunista.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">fdfddddgfgfg</p>
-                    </div>
+
+              <div class="row g-2 mt-1">
+                <div class="col-md-6">
+                  <a href="#"><img src="img/outrasnoticias.png" class="img-fluid rounded-2" alt="blog"></a>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <a href="#"><p class="card-text"><span style="color: #18125E;">Lorem</span> Letraset sheets containing Lorem Ipsum passages, of Lorem Ipsum, and more recently of Lorem Ipsum.</p></a>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="" style="width: 5rem;">
-                    <img class="card-img-top rounded-circle" src="img/colunista.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">fdfddddgfgfg</p>
-                    </div>
+              </div>
+
+              <div class="row g-2 mt-1">
+                <div class="col-md-6">
+                  <a href="#"><img src="img/outrasnoticias.png" class="img-fluid rounded-2" alt="blog"></a>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <a href="#"><p class="card-text"><span style="color: #18125E;">Lorem</span> Letraset sheets containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="" style="width: 5rem;">
-                    <img class="card-img-top rounded-circle" src="img/colunista.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">fdfddddgfgfg</p>
-                    </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="col-md-12 d-flex align-items-center">
+                <div class="w-100 bg-black border-bottom mx-3"></div>
+                <h6 class="text-center px-3">EQUIPAMENTOS</h6>
+                <div class="w-100 bg-black border-bottom mx-3"></div>
+              </div>
+
+              <div class=" col d-flex emphasis mt-4">
+                <div class="card border-0">
+                  <img src="img/imgdestaque.png" class="card-img" alt="Featured Image">
+                  <div class="card-img-overlay text-md-start d-flex align-self-end">
+                    <h6 class="card-text emphasis"><a href="#">Lorem Ipsum passages, and more recently with.</a></h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-2 mt-1">
+                <div class="col-md-6">
+                  <a href="#"><img src="img/outrasnoticias.png" class="img-fluid rounded-2" alt="blog"></a>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <a href="#"><p class="card-text"><span style="color: #18125E;">Lorem</span> Letraset sheets containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-2 mt-1">
+                <div class="col-md-6">
+                  <a href="#"><img src="img/outrasnoticias.png" class="img-fluid rounded-2" alt="blog"></a>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <a href="#"><p class="card-text"><span style="color: #18125E;">Lorem</span> Letraset sheets containing Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <div class="row mt-4">
+            <div class="col-md-12 d-flex align-items-center">
+              <div class="w-100 bg-black border-bottom mx-3"></div>
+              <h6 class="text-center px-3">VÍDEOS</h6>
+              <div class="w-100 bg-black border-bottom mx-3"></div>
+            </div>
+          </div>
+
+          <div class="row row-videos">
+            <div class="col-md-8 papo-solar">
+              <h6 class="mt-4" style="color: #586589;">Papo Solar</h6>
+              <div class="row mt-3">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/07xodnPPVsgIMaqIDf9W7b?utm_source=generator" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+              <div class="row mt-3">
+              <div class="col-md-4">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0gQg2WJieh1Xoe98A17ZyU?utm_source=generator&theme=0" width="100%" height="232px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+              <div class="col-md-4">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5C1QFmFlgTTgOVdWn2wWeR?utm_source=generator" width="100%" height="232px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+              <div class="col-md-4">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/680jpW4zCagjzKO5pkQGFZ?utm_source=generator" width="100%" height="232px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-md col-videos">
+              <h6 class="mt-4" style="color: #586589;">Vídeos</h6>
+              <div class="row g-2 mt-3">
+                <div class="col-md-6">
+                  <a href="#"><img src="img/noticiasmais.png" class="img-fluid rounded-2" alt="ImagemVídeo"></a>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <a href="#"><p class="card-text"><span style="color: #18125E;">Lorem</span> Lorem Ipsum passages, lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-2 mt-2">
+                <div class="col-md-6">
+                  <a href="#"><img src="img/noticiasmais.png" class="img-fluid rounded-2" alt="ImagemVídeo"></a>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <a href="#"><p class="card-text"><span style="color: #18125E;">Lorem</span> Lorem Ipsum passages, lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-2 mt-2">
+                <div class="col-md-6">
+                  <a href="#"><img src="img/noticiasmais.png" class="img-fluid rounded-2" alt="ImagemVídeo"></a>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <a href="#"><p class="card-text"><span style="color: #18125E;">Lorem</span> Lorem Ipsum passages, and more recently of Lorem Ipsum.</p></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
+          <div class="row mt-4">
+            <div class="col-md-12 d-flex align-items-center">
+              <div class="w-100 bg-black border-bottom mx-3"></div>
+              <h6 class="text-center px-3">REVISTAS</h6>
+              <div class="w-100 bg-black border-bottom mx-3"></div>
+            </div>
+          </div>
+
+          <div class="row mt-4 revistas">
+            <div class="col-md-3">
+              <a href="#"><img src="img/Capa-Revista-13-edicao-1.jpg" class="img-fluid revista" alt="capa-revista"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="#"><img src="img/Capa-Revista-13-edicao-1.jpg" class="img-fluid revista" alt="capa-revista"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="#"><img src="img/Capa-Revista-13-edicao-1.jpg" class="img-fluid revista" alt="capa-revista"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="#"><img src="img/Capa-Revista-13-edicao-1.jpg" class="img-fluid revista" alt="capa-revista"></a>
+            </div>
+          </div>
       </div>
     </main>
 
+
+    <footer class="container-fluid mt-5">
+      <div class="row p-5">
+        <div class="col-md-3 logo-footer">
+          <div class="text-white text-center">
+            <p><img src="img/logo-canal-solar.png" alt="logo">
+            <br><br>
+            CNPJ: 29.768.006/0001-95<br>
+            Endereço: Rua Paulo César Fidélis,39<br>
+            Salas 3 e 4 – Lot. Res. Vila Bella<br>
+            Campinas – SP,13087-727</p>
+          </div>
+        </div>
+  
+        <div class="col-md-3 text-white marca-registrada">
+          <p style="color: #777;">Canal Solar (marca registrada)</p>
+          <p>É um canal de notícias e informações sobre o setor de energia solar fotovoltaica. 
+            O conteúdo do canal é protegido pela lei de direitos autorais. 
+            É proibida a reprodução parcial ou total deste site em qualquer meio.</p>
+        </div>
+  
+        <div class="col-md-3 ab-solar">
+          <img src="img/ab-solar.png" class="img-fluid" alt="ab-solar">
+        </div>
+  
+        <div class="col-md-3 selo-gptw">
+          <img src="img/selo-gptw.png" class="img-fluid" alt="selo-gptw">
+        </div>
+      </div>
+  
+      <div class="row bg-black">
+        <div class="col-md text-white mt-2">
+          <h6 style="color: #777;">© 2023 Canal Solar. Desenvolvido por <span>Canal Solar</span></h6>
+        </div>
+      </div>
+  
+      </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script>
+      const dataAtual = document.getElementById("dataAtual");
+      const hoje = new Date();
+      dataAtual.innerHTML = hoje.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' });
+      </script>
 </body>
 </html>
