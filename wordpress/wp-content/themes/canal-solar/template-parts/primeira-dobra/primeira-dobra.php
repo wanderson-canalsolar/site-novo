@@ -119,11 +119,3 @@ if ( $query->have_posts() ) {
     echo 'Nenhum artigo encontrado!';
 }
 ?>
-<div class="row">
-  <div class="col-2">
-    <h2>DESTAQUES</h2>
-  </div>
-  <div class="col-10">
-    <hr class="divisor">
-  </div>
-</div>

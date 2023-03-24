@@ -1,3 +1,11 @@
+<div class="row">
+  <div class="col-2">
+    <h2>DESTAQUES</h2>
+  </div>
+  <div class="col-10">
+    <hr class="divisor">
+  </div>
+</div>
 <div class="container">
   <div class="row">
     <div class="col-lg-8">
@@ -84,5 +92,13 @@
         endif;
       ?>
     </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-2">
+    <h2>NOTÍCIAS</h2>
+  </div>
+  <div class="col-10">
+    <hr class="divisor">
   </div>
 </div>
