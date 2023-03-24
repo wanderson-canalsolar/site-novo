@@ -6,3 +6,64 @@ Author URI: https://canalsolar.com.br
 Description: Tema criado exclusivamente para o Canal Solar
 Version: 1.0.0
 */
+
+/*HEADER*/
+.row {
+    background-color: black;
+    color: white;
+  }
+  
+  .row a {
+    color: white;
+  }
+  
+  .row i {
+    color: white;
+  }
+  .search-box {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  .search-box .search-field {
+    padding-left: 32px; /* to make space for the magnifying glass */
+  }
+  .search-box .search-submit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .search-box .search-submit i {
+    color: #aaa;
+    font-size: 18px;
+  }
+  .email-input {
+    background-color: #18125E;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .email-input input[type="email"] {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  .email-input input[type="email"]::before {
+    content: "\f0e0";
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color:#fff;
+  }
+    

@@ -1,28 +1,65 @@
 <!doctype html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 
 <head>
-  <meta charset="utf-8">
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php wp_head(); ?>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-        <?php
-          $logo = get_theme_mod( 'custom_logo' );
-          if ($logo) {
-            echo wp_get_attachment_image( $logo, 'full', false, array(
-              'class'    => 'img-fluid',
-              'alt'      => get_bloginfo( 'name' ),
-            ) );
-          } else {
-            echo get_bloginfo( 'name' );
-          }
-        ?>
-      </a>
+
+<div class="container-fluid">
+  <div class="row" style="height: 30px;">
+    <div class="col-4">
+      <a href="#">Link</a>
+    </div>
+    <div class="col-4">
+      <span><?php echo date('F j, Y'); ?></span>
+    </div>
+    <div class="col-4 d-flex justify-content-end">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-spotify"></i></a>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="row one">
+        <div class="container-fluid">
+                    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                      <?php
+                        $logo = get_theme_mod( 'custom_logo' );
+                        if ($logo) {
+                          echo wp_get_attachment_image( $logo, 'full', false, array(
+                            'class'    => 'img-fluid',
+                            'alt'      => get_bloginfo( 'name' ),
+                          ) );
+                        } else {
+                          echo get_bloginfo( 'name' );
+                        }
+                        ?>
+                    </a>
+                  
+
+                  </div>
+
+                  <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <label>
+                  <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label', 'textdomain' ); ?></span>
+                  <div class="search-box">
+                    <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search...', 'placeholder', 'textdomain' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+                    <button type="submit" class="search-submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                  </div>
+                </label>
+              </form>
+
+    </div>
+
+<div class="row two">
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -41,13 +78,7 @@
         ));
         ?>
 
-        <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-          <label>
-            <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label', 'textdomain' ); ?></span>
-            <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search...', 'placeholder', 'textdomain' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
-          </label>
-          <button type="submit" class="search-submit"><?php echo esc_html_x( 'Search', 'submit button', 'textdomain' ); ?></button>
-        </form>
       </div>
-    </div>
+</div>
+
   </nav>

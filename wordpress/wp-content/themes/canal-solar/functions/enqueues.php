@@ -3,6 +3,10 @@ function custom_enqueue_scripts()
 {
   // * styles *
 
+  // Font Awesome style
+  wp_register_style('fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css', false, '5.15.4', 'all');
+  wp_enqueue_style('fontawesome');
+
   // Bootstrap 5 style
   wp_register_style('bootstrap5', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css', false, '5.1.0', null);
   wp_enqueue_style('bootstrap5');
