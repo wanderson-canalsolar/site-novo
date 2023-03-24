@@ -35,7 +35,7 @@
               <div class="col-md-12">
                 <div class="card-body">
                   <h5 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                  <p class="card-text"><?php the_excerpt(); ?></p>
+                  <p class="card-text"><?php echo wp_trim_words(get_the_excerpt(), 10); ?></p>
                   <p class="card-text"><small class="text-muted"><?php the_date(); ?></small></p>
                 </div>
               </div>
@@ -70,7 +70,7 @@
       <div class="card mb-3">
         <div class="card-body">
           <h5 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-          <p class="card-text"><?php the_excerpt(); ?></p>
+          <p class="card-text"><?php echo wp_trim_words(get_the_excerpt(), 10); ?></p>
           <p class="card-text"><small class="text-muted"><?php the_category(', '); ?></small></p>
         </div>
       </div>

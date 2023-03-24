@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-md-8">
                   <h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                  <p class="card-text"><?php the_excerpt(); ?></p>
+                  <p class="card-text"><?php echo wp_trim_words(get_the_excerpt(), 10); ?></p>
                 </div>
               </div>
             </div>
@@ -83,7 +83,7 @@
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large', ['class' => 'img-fluid mb-3']); ?></a>
           <?php endif; ?>
           <h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-          <p class="card-text"><?php the_excerpt(); ?></p>
+          <p class="card-text"><?php echo wp_trim_words(get_the_excerpt(), 10); ?></p>
         </div>
       </div>
       <?php
